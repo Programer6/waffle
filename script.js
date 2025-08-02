@@ -21,3 +21,28 @@ const moods = {
     }
 };
 
+const happyBtn = document.getElementById('happy-btn');
+const sadBtn = document.getElementById('sad-btn');
+const angryBtn = document.getElementById('angry-btn');
+const  motivatedBtn = document.getElementById('motivated-btn');
+const relaxedBtn = document.getElementById('relaxed-btn');
+const moodImage = document.getElementById('mood-image');
+
+if (happyBtn) {
+    happyBtn.addEventListener('click', function() {
+        moodImage.src = moods.happy.image;
+        document.getElementById('quote').innerText = moods.happy.quote;
+    });
+    sadBtn.addEventListener('click', function() {
+        moodImage.src = moods.sad.image;
+        document.getElementById('quote').innerText = moods.sad.quote;
+    });
+    angryBtn.addEventListener('click', function() {
+        moodImage.src = moods.angry.image;
+        document.getElementById('quote').innerText = moods.angry.quote;
+    });
+    motivatedBtn.addEventListener('click', function() {
+        moodImage.src = moods.motivated.image;
+        document.getElementById('quote').innerText = moods.motivated.quote;
+    });
+}
