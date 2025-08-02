@@ -8,33 +8,40 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="flex-box">
-        <div class="whatIsThis">
-            <h1>What is this?</h1>
-            <p>This is a mood based quote generator to make you smile :)</p>
-            </div>
-        <div class="howItWorks">
-            <h1>How does this work?</h1>
+    <header>
+        <h1>Mood Based Quote Generator</h1>
+    </header>
+
+    <div class="info-container">
+        <div class="info-box">
+            <h2>About This Site</h2>
+            <p>This is a mood-based quote generator to help you smile :)</p>
+        </div>
+        <div class="info-box">
+            <h2>How It Works</h2>
             <p>Pick your current mood and we’ll give you a matching quote!</p>
         </div>
     </div>
+
     <hr>
-    <h1>What is your ,<strong>mood<strong>, today?</h1>
-    <button type="button" id="happy-btn" class="mood-btn">Happy</button>
-    <button type="button" id="sad-btn" class="mood-btn">Sad</button>
-    <button type="button" id="angry-btn" class="mood-btn">Angry</button>
-    <button type="button" id="motivated-btn" class="mood-btn">Motivated</button>
-    <button type="button" id="relaxed-btm">Relaxed</button>
 
-    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXVmbmtvY3J5cGhwZmU1bHV3amU3cDQ5M3ZoN2tieWJ2OGpheTJ4aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11sBLVxNs7v6WA/giphy.gif" alt="Happy Mood" id="happy-img" class="mood-img">
-    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnA1ZG9pc2RjYzlhM3NhdDF5ZHp5bHBmbzlraDJ6ajZ4emFwc3VvMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9Y5BbDSkSTiY8/giphy.gif" alt="Sad Mood" id="sad-img" class="mood-img">
-    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnRwM2ZleGx5Mjk1MmZ0ZGJtcnpsZzI5cDJvajV6MmxjaHk0bnhmZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT5LMVpIkWQasCA8eY/giphy.gif" alt="Angry Mood" id="angry-img" class="mood-img">
-    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHBzejNpcmVxa2FvcW55aGdpZndwYWhpZjZhZ2QweHhueGh0eGwwZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Qk2mdRUP9qJYrUS0KI/giphy.gif" alt="Motivated Mood" id="montivated-img" class="mood-img">
-    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDl0bGJiZ2JweHp6bzd3YjhqcDBrc3gwbXF1ZjRod3FoZWRuaHlqMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/J16yxZ0TUpSGqGTt3I/giphy.gif" alt="Relaxed Mood" id="relaxed-img" class="mood-img">
+    <div class="main-content">
+        <h1>What is your <strong>mood</strong> today?</h1>
+        
+        <div class="button-container">
+            <button type="button" id="happy-btn" class="mood-btn">Happy</button>
+            <button type="button" id="sad-btn" class="mood-btn">Sad</button>
+            <button type="button" id="angry-btn" class="mood-btn">Angry</button>
+            <button type="button" id="motivated-btn" class="mood-btn">Motivated</button>
+            <button type="button" id="relaxed-btn" class="mood-btn">Relaxed</button>
+        </div>
 
-<footer>
-    &copy; 2023 Delroy 
-    <p>Made for waffle!</p>
-</footer>
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW5na2M0YXZvZXR6Y2J4Mnp3ZTd3YjhhMmViaGZqcHE1bWJ6Mjk4MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Zd5ZqNSI0mfymBRNQc/giphy.gif" alt="Mood Image" id="mood-img" class="mood-img">
+    </div>
+
+    <footer>
+        <p>© 2023 Delroy | Made for Waffle!</p>
+    </footer>
+
 </body>
 </html>
