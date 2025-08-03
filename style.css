@@ -86,7 +86,7 @@ hr {
 #mood-btn:hover {
     transform: rotate(360deg);
 }
-#qoute-btn {
+#qoute-btn, #color-change-btn, #back-to-page {
     background-color: #ff9800;
     color: white;
     padding: 10px 20px;
@@ -98,11 +98,11 @@ hr {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#qoute-btn:hover {
+#qoute-btn:hover, #color-change-btn:hover, #back-to-page:hover
+{
     background-color: #ff9800;
     transform: scale(1.1);
 }
-
 
 
 .mood-img {
