@@ -45,4 +45,8 @@ if (happyBtn) {
         moodImage.src = moods.motivated.image;
         document.getElementById('quote').innerText = moods.motivated.quote;
     });
+    relaxedBtn.addEventListener('click', function() {
+        moodImage.src = moods.relaxed.image;
+        document.getElementById('quote').innerText = moods.relaxed.quote;
+    });
 }
