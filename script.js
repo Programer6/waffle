@@ -34,21 +34,26 @@ if (happyBtn) {
     happyBtn.addEventListener('click', function() {
         moodImage.src = moods.happy.image;
         document.getElementById('quote').innerText = moods.happy.quote;
+        localStorage.setItem('selected_mood', 'happy'); // Save last mood to localStorage!!
     });
     sadBtn.addEventListener('click', function() {
         moodImage.src = moods.sad.image;
         document.getElementById('quote').innerText = moods.sad.quote;
+        localStorage.setItem('selected_mood', 'sad');
     });
     angryBtn.addEventListener('click', function() {
         moodImage.src = moods.angry.image;
         document.getElementById('quote').innerText = moods.angry.quote;
+        localStorage.setItem('selected_mood', 'angry');
     });
     motivatedBtn.addEventListener('click', function() {
         moodImage.src = moods.motivated.image;
         document.getElementById('quote').innerText = moods.motivated.quote;
+        localStorage.setItem('selected_mood', 'motivated');
     });
     relaxedBtn.addEventListener('click', function() {
         moodImage.src = moods.relaxed.image;
         document.getElementById('quote').innerText = moods.relaxed.quote;
+        localStorage.setItem('selected_mood', 'relaxed');
     });
 }
