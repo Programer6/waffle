@@ -29,20 +29,25 @@
         <h1>What is your <strong>mood</strong> today?</h1>
         
         <div class="button-container">
-            <button type="button" id="happy-btn" class="mood-btn">Happy</button>
-            <button type="button" id="sad-btn" class="mood-btn">Sad</button>
-            <button type="button" id="angry-btn" class="mood-btn">Angry</button>
-            <button type="button" id="motivated-btn" class="mood-btn">Motivated</button>
-            <button type="button" id="relaxed-btn" class="mood-btn">Relaxed</button>
+            <!-- Added a data-mood attribute to simplify the JavaScript -->
+            <button type="button" id="happy-btn" class="mood-btn" data-mood="happy">Happy</button>
+            <button type="button" id="sad-btn" class="mood-btn" data-mood="sad">Sad</button>
+            <button type="button" id="angry-btn" class="mood-btn" data-mood="angry">Angry</button>
+            <button type="button" id="motivated-btn" class="mood-btn" data-mood="motivated">Motivated</button>
+            <button type="button" id="relaxed-btn" class="mood-btn" data-mood="relaxed">Relaxed</button>
         </div>
-        <p>Here is your custom meme!:</p>
+        
+        <p>Here is your custom GIF!</p>
         <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW5na2M0YXZvZXR6Y2J4Mnp3ZTd3YjhhMmViaGZqcHE1bWJ6Mjk4MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Zd5ZqNSI0mfymBRNQc/giphy.gif" alt="Mood Image" id="mood-img" class="mood-img">
         <p id="quote">Your mood quote will appear here...</p>
-        <button id="qoute-btn">Click for Custom Qoute!</button>    
+        
+        <a href="quote.html">
+            <button id="quote-btn">Click for Custom Quote!</button>    
+        </a>
     </div>
+
     <footer>
         <p>© 2023 Delroy | Made for Waffle!</p>
     </footer>
-
 </body>
 </html>
