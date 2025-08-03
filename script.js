@@ -57,3 +57,11 @@ if (happyBtn) {
         localStorage.setItem('selected_mood', 'relaxed');
     });
 }
+
+const resetMoodbtn = document.getElementById('back-to-page');
+
+if (resetMoodbtn) {
+    resetMoodbtn.addEventListener('click', function() {
+        localStorage.removeItem('selected_mood');
+        this.localStorage.removeItem('')
+}
