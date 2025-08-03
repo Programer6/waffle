@@ -15,7 +15,7 @@ const moods = {
         color: '#f44336'
     },
     motivated: {
-        image: 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHBzejNpcmVxa2FvcW55aGdpZndwYWhpZjZhZ2QweHhueGh0eGwwZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Qk2mdRUP9QJYrUS0KI/giphy.gif',
+        image: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWQ1MjhwcGxzY2NwMnV6bWhsYnQ5N2wwMDg0bjZ3ZnR4Ym82ZGxueCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4GXUa4U05Q0JAM972c/giphy.gif',
         quote: "The only way to do great work is to love what you do. - Steve Jobs",
         color: '#4caf50'
     },
