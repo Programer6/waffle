@@ -1,4 +1,4 @@
-const moods = {
+const moods = { // Define moods with images and quotes under moods.happy.imgage 
     happy: {
         image: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXVmbmtvY3J5cGhwZmU1bHV3amU3cDQ5M3ZoN2tieWJ2OGpheTJ4aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11sBLVxNs7v6WA/giphy.gif',
         quote: "For every minute you are angry you lose sixty seconds of happiness. - Ralph Waldo Emerson"
@@ -21,6 +21,7 @@ const moods = {
     }
 };
 
+// learned how to fetch elements by id and add event listeners to buttons
 const happyBtn = document.getElementById('happy-btn');
 const sadBtn = document.getElementById('sad-btn');
 const angryBtn = document.getElementById('angry-btn');
@@ -28,6 +29,7 @@ const  motivatedBtn = document.getElementById('motivated-btn');
 const relaxedBtn = document.getElementById('relaxed-btn');
 const moodImage = document.getElementById('mood-image');
 
+// event listeners for buttons ot check for clicks!!
 if (happyBtn) {
     happyBtn.addEventListener('click', function() {
         moodImage.src = moods.happy.image;
