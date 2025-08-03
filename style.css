@@ -5,6 +5,7 @@
     --angry-color: #f44336;
     --motivated-color: #4caf50;
     --relaxed-color: #9c27b0;
+    --button-color: #ff9800;
 }
 
 body {
@@ -13,6 +14,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 20px;
+    transition: background-color 0.5s ease;
 }
 
 h1, h2 {
@@ -40,6 +42,7 @@ hr {
     padding: 20px;
     border-radius: 8px;
     max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .button-container {
@@ -52,8 +55,8 @@ hr {
 }
 
 .mood-btn {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: none;
     display: flex;
@@ -63,31 +66,22 @@ hr {
     font-weight: bold;
     color: white;
     cursor: pointer;
-    transition: transform 0.8s ease, background-color 0.3s ease;
-    box-shadow: 0 4px 8px lightcoral;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-#happy-btn {
-    background-color: var(--happy-color);
-}
-#sad-btn {
-    background-color: var(--sad-color);
-}
-#angry-btn {
-    background-color: var(--angry-color);
-}
-#motivated-btn {
-    background-color: var(--motivated-color);
-}
-#relaxed-btn {
-    background-color: var(--relaxed-color);
+.mood-btn:hover {
+    transform: scale(1.1);
 }
 
-#mood-btn:hover {
-    transform: rotate(360deg);
-}
-#qoute-btn, #color-change-btn, #back-to-page {
-    background-color: #ff9800;
+#happy-btn { background-color: var(--happy-color); color: #333; }
+#sad-btn { background-color: var(--sad-color); }
+#angry-btn { background-color: var(--angry-color); }
+#motivated-btn { background-color: var(--motivated-color); }
+#relaxed-btn { background-color: var(--relaxed-color); }
+
+#quote-btn, #color-change-btn, #back-btn {
+    background-color: var(--button-color);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -98,12 +92,9 @@ hr {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#qoute-btn:hover, #color-change-btn:hover, #back-to-page:hover
-{
-    background-color: #ff9800;
-    transform: scale(1.1);
+#quote-btn:hover, #color-change-btn:hover, #back-btn:hover {
+    transform: scale(1.05);
 }
-
 
 .mood-img {
     width: 350px;
@@ -118,4 +109,14 @@ footer {
     margin-top: 50px;
     color: #777;
     font-size: 14px;
+}
+
+#custom-quote-input {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
